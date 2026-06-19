@@ -92,20 +92,37 @@ Placeholder directory used for storing and loading trained model checkpoints.
 <details>
 <summary><b>dataset-orig/</b></summary>
 
-Placeholder directory containing the original dataset.
+Placeholder directory containing the original dataset. The Milk10 Benchmark dataset description and download location are available here: https://challenge.isic-archive.com/landing/milk10k/
 
 </details>
 
 <details>
 <summary><b>dataset_resized_stratified/</b></summary>
 
-Placeholder directory containing the resized and stratified train, validation, and test splits used for the **11-class classification task**.
+Placeholder directory containing the resized and stratified train, validation, and test splits used for the **11-class classification task**. One of the lession ids, corresponding to a dermoscopic and a normal image is put as an example in each folder. 
 
 </details>
 
 <details>
 <summary><b>mal_ben_dataset_resized_stratified/</b></summary>
 
-Placeholder directory containing the resized and stratified train, validation, and test splits used for the **binary malignant vs. benign classification task**.
+Placeholder directory containing the resized and stratified train, validation, and test splits used for the **binary malignant vs. benign classification task**. One of the lession ids, corresponding to a dermoscopic and a normal image is put as an example in each folder. 
+
 
 </details>
+
+## Project overview and results:
+### Project Overview
+
+This project investigates the relationship between **machine unlearning** and **fairness** in multimodal healthcare classification models. The experiments evaluate both **sample-level unlearning** (removing training samples) and **feature-level unlearning** (revoking metadata attributes) while analysing their impact on protected demographic subgroups.
+
+The work is motivated by realistic data removal scenarios, such as user deletion requests under GDPR or the revocation of specific data attributes. Using a multimodal skin lesion classification setting, the project examines whether unlearning methods preserve not only predictive performance but also fairness across demographic groups.
+
+### Main Results
+
+- Utility metrics alone do not fully characterise unlearning behaviour.
+- Fairness effects can differ substantially from overall performance effects.
+- Targeted forgetting of minority subgroups can reveal fairness degradation that is not visible when using random forget sets.
+- The effects of feature revocation depend strongly on feature importance and dataset characteristics.
+- Fairness should be considered a first-class evaluation criterion for machine unlearning methods.
+
