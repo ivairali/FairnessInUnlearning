@@ -1,6 +1,6 @@
 # Fairness-Aware Multimodal Machine Unlearning
 
-This repository contains the code developed for the Master's thesis **"Fairness-Aware Multimodal Machine Unlearning"**. The project investigates machine unlearning methods for uni-modal and multimodal architectures while evaluating both predictive performance and fairness-related metrics.
+This repository contains the code developed for the Master's thesis **"Fairness-Aware Multimodal Machine Unlearning"**. The project investigates machine unlearning methods for multimodal architectures while evaluating both predictive performance and fairness-related metrics.
 
 ## Repository Structure
 
